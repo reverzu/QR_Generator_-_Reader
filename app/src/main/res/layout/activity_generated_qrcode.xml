@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneratedQRCodeActivity">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:id="@+id/fl_qr_code"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="75dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/tv_qr_generate_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/qr_code_will_appear_here"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat"
+        android:textSize="22sp"
+        android:padding="4dp"
+        android:elevation="1dp"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/iv_qr_generate_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_share_24"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_qr_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fl_qr_code"
+        android:padding="5dp"
+        android:hint="@string/add_text_to_generate_qr_code"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_qr_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine|textImeMultiLine"
+            android:textSize="16sp"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_generate_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="@string/generate_qr_code"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/til_qr_input_text"
+        android:textSize="20sp"/>
+</RelativeLayout>
+</ScrollView>

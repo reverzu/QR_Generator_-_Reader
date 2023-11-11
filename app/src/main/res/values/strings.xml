@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QRCode</string>
+    <string name="qr_code_generator">QR Code Generator</string>
+    <string name="reverzu">REVERZU</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="read_qr_code">Read QR Code</string>
+    <string name="qr_code_will_appear_here">QR code will appear here</string>
+    <string name="add_text_to_generate_qr_code">Add text to generate QR Code.</string>
+</resources>
